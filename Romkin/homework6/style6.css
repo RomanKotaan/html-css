@@ -1,0 +1,624 @@
+@font-face{
+	font-family: "Arial MT";
+	src: url(font/ARIALMTMEDIUM.TTF);
+}
+@font-face{
+	font-family: "Arial - Black";
+	src: url(font/ofont.ru_Arial.ttf);
+}
+@font-face{
+	font-family: "Arial - Italic MT";
+	src: url(font/ArialMTStd-Italic.otf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	margin-top: 10px; 
+}
+.img_phone{
+	width: 22px;
+	height: 22px;
+	background: linear-gradient(to top, #206988 0%, #114165 59%, #0c3256 100%);
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+}
+.phone_menu{
+	display: flex;
+	font-family: "Arial MT";
+	font-size: 18px;
+	color: #5e696d;
+	letter-spacing: 0.49px;
+	padding-right: 17px;
+}
+.lodin_menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 496px;
+	height: 27px;
+	margin-right: 17px;
+	box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%);
+}
+.lodin_menu img{
+	width: 14px;
+	height: 18px;
+	padding-left: 5px;
+	padding-right: 3px;
+	margin-top: 1px;
+}
+.log_in{
+	width: 113px;
+	height: 16px;
+	margin-right: 3px;
+	border: solid 1px #788791;
+	vertical-align: top;
+}
+.main_menu_login{
+	display: flex;
+}
+.login_registration, .registration_login{
+	background-color: transparent;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-family: "Lucida Sans Unicode";
+	font-size: 11px;
+	color: #ffffff;
+	line-height: 1;
+	margin-bottom: 6px;
+	outline: none;
+}
+.registration_login{
+	border-right: solid 1px white;
+}
+.first_login{
+    margin-top: 1px;
+}
+.forgot_password a{
+	text-decoration: underline;
+	font-family: "Lucida Sans Unicode";
+	font-size: 12px;
+	color: #bfbfbf;
+	line-height: 28px;
+	font-weight: 400;
+	padding-right: 8px
+}
+.mini_menu{
+	border: 1px solid #bdc4c7;
+	width: 76px;
+	height: 21px;
+	background-color: #ffffff;
+	display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgba(150, 150, 150, 0.2);
+}
+::placeholder{
+	padding-left: 5px;
+	color: #97a2a6;
+	font-family: "Lucida Sans Unicode";
+	font-size: 11px;
+}
+.img_blick{
+	display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contacts_menu{
+	display: flex;
+    list-style-type: none;
+}
+.contacts_menu li{
+	padding-right: 17px;
+	padding-left: 17px;
+	margin-top: 2px;
+	line-height: 1.7;
+	height: 26px;
+}
+.contacts_menu a{
+	text-decoration: none;
+	color: #7d868a;
+	font-family: "Lucida Sans Unicode";
+    font-size: 14px;
+}
+.contacts_menu a:active{
+	color: #ffffff; 
+}
+.basket_menu{
+	list-style-type: none;
+	display: flex;
+    justify-content: space-between;
+    width: 215px;
+    padding-left: 70px;
+    padding-right: 13px;
+    line-height: 1.5;
+}
+.basket_menu img{
+	padding-top: 7px;
+}
+.main_menu{
+	display: flex;
+    justify-content: flex-end;
+    width: 906px;
+    margin: auto;
+    height: 31px;
+    border: 1px solid #0d1642;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.75);
+    background:linear-gradient(to top, #000000 0%, #576068 100%);
+    margin-top: 7px;
+    border-radius: 5px;
+}
+.contacts_menu li:hover{
+	background: linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%);
+	border-radius: 25px;
+}
+.contacts_menu a:hover{
+	color: #b1bcc0;
+}
+.gray_text_in_the_menu{
+	color: #929b9f;
+	font-family: "Arial MT";
+	font-size: 12px;
+	font-weight: 400;
+}
+.blue_text_in_the_menu{
+	color: #0d5a8f;
+	font-family: "Arial MT";
+	font-size: 13px;
+	letter-spacing: 0.48px;
+}
+.box1{
+	width: 412px;
+	height: 135px;
+	border: 1px solid #9c9c9d;
+	box-shadow: 3px 4px 5px rgba(104, 104, 104, 0.75);
+	border-radius: 20px;
+}
+.menu_car_search{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+.car_search{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 4px;
+}
+.search{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.car_brands, .car_model, .year_of_issue, .equipment{
+	display: flex;
+	align-items: center;
+}
+.black_text_in_the_search{
+	font-family: "Arial MT";
+	color: #000000;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 8px;
+	letter-spacing: 0.25px;
+}
+.gray_text_in_the_search{
+	font-family: "Arial MT";
+	font-weight: 400;
+	color: #77858b;
+	font-size: 9px;
+	letter-spacing: 0.23px;
+	line-height: 8px;
+}
+.vertical_text{
+	display: flex;
+	flex-direction:column;
+}
+.left_search, .right_search{
+	display: flex;
+}
+.car_select_menu{
+	display: grid;
+	margin-right: 5px; 
+}
+.choise_of_car{
+	width: 101px;
+    height: 17px;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    margin-bottom: 5px; 
+}
+.choise_of_year{
+	width: 58px;
+	height: 17px;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+	margin-bottom: 5px;
+}
+.menu_car_search{
+	display: flex;
+    align-items: flex-end;
+	font-family: "Arial - Black";
+	font-size: 10px;
+	letter-spacing: 0.25px;
+	font-weight: 400;
+	color: #154468;
+}
+.main_text_menu{
+	font-size: 12px;
+	letter-spacing: 0.3px;
+}
+.submit input{
+	outline: none;
+	background-color: transparent;
+	color: #154467;
+	font-size: 14px;
+	text-decoration: underline;
+	letter-spacing: 0.35px;
+	font-weight: 400;
+	font-style: italic;
+}
+.submit{
+	display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.box2{
+	width: 190px;
+	height: 135px;
+	box-shadow: 3px 4px 5px rgba(150, 150, 150, 0.75);
+	border: 1px solid #9c9c9d;
+	border-radius: 20px;
+	margin: 0 13px; 
+}
+.box2_title{
+	font-family: "Arial - Black";
+	font-size: 12px;
+	color: #114165;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.black_text_in_tire_search{
+	font-family: "Lucida Sans Unicode";
+	font-size: 10px;
+	color: #000000;
+	font-weight: 400;
+	padding-right: 8px;
+	display: flex;
+    align-items: flex-end;
+}
+.black_text_in_tire_search_season{	
+	font-family: "Lucida Sans Unicode";
+	font-size: 10px;
+	color: #000000;
+	font-weight: 400;
+	padding-right: 8px;
+
+}
+.size{
+	padding-bottom: 4px;
+	display: flex;
+    justify-content: center;
+}
+.R{
+	display: flex;
+    padding-left: 46px;
+    padding-bottom: 4px;
+}
+.season{
+	display: flex;
+	padding-left: 20px;
+}
+.vertical_form{
+	display: grid;
+}
+.vertical_form span{
+	color: #000000;
+	font-size: 10px;
+	font-family: "Lucida Sans Unicode";
+	line-height: 0.5;
+}
+.size_select{
+	height: 17px;
+	width: 53px;
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+}
+select{
+	outline: none;
+}
+.size_select:active{
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+	outline: none;
+}
+.size_R_select{
+	width: 45px;
+	height: 17px;
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+}
+.vertical_form input{
+	vertical-align: middle;
+}
+.box3_title{
+	font-family: "Arial - Black";
+    font-size: 12px;
+    color: #114165;
+    font-weight: 400;
+}
+.black_text_in_the_search_wheels{
+	font-family: "Lucida Sans Unicode";
+	font-size: 10px;
+	color: #000000;
+	line-height: 1;
+}
+.gray_text_in_the_search_wheels{
+	font-family: "Lucida Sans Unicode";
+	font-size: 10px;
+	color: #77858b;
+	line-height: 1;
+}
+.search_wheels_1{
+	display: flex;
+	justify-content: space-between;
+}
+.search_wheels_2{
+	display: flex;
+	justify-content: space-between;
+}
+.search_wheels_3{
+	display: flex;
+    justify-content: space-between;
+}
+.box3{
+	width: 268px;
+	height: 135px;
+	box-shadow: 3px 4px 5px rgba(150, 150, 150, 0.75);
+	border: 1px solid #9c9c9d;
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+.box3_content{
+	display: flex;
+	justify-content: space-around;
+}
+.box3_select{
+	width: 58px;
+	height: 17px;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+.R_select{
+	width: 52px;
+	height: 17px;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+.left_search_wheels{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.right_search_wheels{
+	flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    height: 110px;
+    padding-left: 10px;
+    border-left: solid 1px #bdc6ca;
+    margin-top: 5px;
+}
+.search_wheels_select{
+	display: flex;
+    align-items: center;
+}
+.blue_circle{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 22px;
+	height: 21px;
+	background:linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%);
+	border-radius: 100%;
+	margin-top: 2px;
+	margin-right: 3px;
+	margin-left: 4px; 
+}
+.main_title{
+	display: flex;
+    width: 181px;
+    height: 25px;
+    border: 1px solid #79878d;
+    box-shadow: 0 0 black;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.main_title span{
+	line-height: 2;
+	color: #114165;
+	font-family: "Lucida Sans Unicode";
+    font-size: 13px;
+}
+.left_title{
+	display: flex;
+    justify-content: stretch;
+    width: 148px;
+    height: 26px;
+    border: 1px solid #79878d;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.left_title span{
+	font-family: "Lucida Sans Unicode";
+	font-size: 13px;
+    color: #114165;
+}
+.text_left_title{
+    line-height: 1.6;
+}
+.left_list a{
+	color: #4b649d;
+	font-family: "Lucida Sans Unicode";
+	font-size: 13px;
+}
+.left_list{
+	padding-left: 50px;
+	list-style-image: url(img/marker.png);
+}
+.left_list li:hover{
+	font-style: italic;
+	font-size: 14px;
+	text-decoration: underline;
+	color: #0c3256;
+	font-weight: bold;
+	font-family: "Arial MT";
+	list-style-image: url(img/marker.hover.png);
+}
+.goods{
+	width: 527px;
+	height: 628px;
+	background: linear-gradient(to top, rgba(35, 75, 93, 0.49) 0%, rgba(201, 207, 209, 0.49) 100%);
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 9px;
+}
+.product{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product_img{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #ffffff;
+	border: 1px solid #a4aeb1;
+	width: 138px;
+	height: 127px;
+	border-radius: 5px;
+}
+.line{
+	display: flex;
+    justify-content: space-around;
+}
+.product_name{
+	font-family: "Lucida Sans Unicode";
+	color: #206988;
+	font-size: 15px;
+	font-weight: bold;
+}
+.product_description{
+	font-family: "Lucida Sans Unicode";
+	font-size: 13px;
+	color: #1f2528;
+}
+.price{
+	font-size: 16px;
+	font-weight: bold;
+	color: #114165;
+	font-family: "Arial MT";
+	font-style: italic;
+}
+.currency{
+	font-size: 12px;
+	font-weight: bold;
+	color: #114165;
+	font-family: "Arial MT";
+	font-style: italic;
+}
+.content{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+.brand_choise{
+	margin-left: 20px;
+	height: 70px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text_brand_choise{
+	color: #465961;
+	font-family: "Lucida Sans Unicode";
+	font-size: 13px;
+}
+.submit_brand_choise{
+	padding-left: 20px;
+    margin-top: 10px;
+}
+.submit_brand_choise input{
+	font-family: "Arial MT";
+	color: #e5e9ea;
+	font-size: 11px;
+	letter-spacing: 0.44px;
+	text-decoration: none;
+	width: 80px;
+	height: 26px;
+	border: 1px solid #a7abae;
+    border-radius: 15px;
+    outline: none;
+	background: linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%);
+}
+.partners{
+	display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.partner{
+	padding: 0 7px;
+}
+footer{
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+.finish_menu{
+	display: flex;
+    list-style-type: none;
+}
+.finish_menu li:not(:first-child){
+	padding-left: 7px;
+	border-left: solid 1px #bec6c9;
+}
+.finish_menu li:not(:last-child){
+	padding-right: 7px;
+}
+.finish_menu li a{
+	color: #bec6c9;
+	font-family: "Arial MT";
+	font-size: 12px;
+}
+.global_vision{
+	color: #7f4740;
+	font-family: "Arial MT";
+	font-size: 10px;
+}
+.last_container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 908px;
+	height: 100px;
+	border: 1px solid #242a3c;
+	background-color: #213a4d;
+}
+.last_div{
+	margin-top: 15px;
+}

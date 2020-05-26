@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Tahoma;
+    src: url(Tahoma/Tahoma.ttf);
+}
+body{
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+}
+.contact{
+	margin-bottom: 15px;
+}
+.container {
+	width: 823px;
+	margin: 0 auto;
+}
+.logo{
+	margin-left: 15px;
+}
+.image-list1, .image-list2{
+	display: flex;
+}
+.image-list2{
+	margin-top: 50px;
+}
+.item {
+	margin-right: 7px;
+	width: 270px;
+	text-align: center;
+}
+footer{
+	text-align: center;
+	margin-top: 150px;
+}
+span{
+	color: white;
+	font-family: Tahoma;
+}
+.img-content{
+	border: 4px groove #848484;
+	border-radius: 3px;
+	width: 261px;
+	height: 178px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5)
+}
+.img-content img{
+	position: relative;
+  	z-index: -2;
+}
