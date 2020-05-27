@@ -60,13 +60,14 @@ header{
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
 	height: 44px;
 	width: 246px;
-	border: none;
 	outline: none;
 	background: transparent;
+	border:none;
 }
 .header__drop-down:active, 
 .header__drop-down:focus {
     outline: none;
+    border:none;
 }
 .menu{
 	display: flex;
@@ -465,7 +466,7 @@ footer{
  	position: absolute;
  	z-index: 1;
  	top:44px;
- 	border-radius: 0 0 5px 5px;
+ 	border-radius: 5px;
 }
 .header__items:hover{
 	width: 100%;
@@ -477,7 +478,6 @@ footer{
 .header__drop-down:hover{
 	height: 44px;
 	width: 246px;
-	background-color: #36293e;
 	text-align: center;
 	left: 0; 
  	right: 0; 
@@ -486,9 +486,7 @@ footer{
  	z-index: 1;
  	opacity: 0.9;
  	position: absolute;
- 	border: 1px solid #051116;
- 	border-radius: 5px 5px 0 0;
- 
+ 	border: none;
 }
 .header__menu_mob li:hover{
 	background: #1b1421;
@@ -642,7 +640,7 @@ footer{
  	position: absolute;
  	z-index: 1;
  	top:44px;
- 	border-radius: 0 0 5px 5px;
+ 	border-radius: 5px;
 }
 
 .header__items:hover{
@@ -656,7 +654,6 @@ footer{
 .header__drop-down:hover{
 	height: 44px;
 	width: 246px;
-	background-color: #36293e;
 	text-align: center;
 	left: 0; 
  	right: 0; 
@@ -665,8 +662,7 @@ footer{
  	z-index: 1;
  	opacity: 0.9;
  	position: absolute;
- 	border: 1px solid #051116;
- 	border-radius: 5px 5px 0 0;
+ 	border: none;
 }
 .header__menu_mob li:hover{
 	background: #1b1421;
