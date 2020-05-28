@@ -20,7 +20,7 @@
 	font-family: "Open Sans - Extrabold";
 	src: url(font/Open_Sans/OpenSans-ExtraBold.ttf);
 }
-.wrapper__header{
+header{
 	background-image: url(img/bg.jpg);
 	background-position: bottom;
 	height: 846px;
@@ -29,7 +29,7 @@
 	margin: 0px auto;
 	width: 960px;
 }
-header{
+.header__main{
 	padding-top: 50px;
 }
 .header__box{
@@ -63,6 +63,7 @@ header{
 	outline: none;
 	background: transparent;
 	border:none;
+	margin: 0 auto;
 }
 .header__drop-down:active, 
 .header__drop-down:focus {
@@ -166,9 +167,6 @@ header{
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
-}
-.about__text_w320, .about__text_w480, .about__text_w768{
-	display: none;
 }
 .about__text button{
 	color: #ffffff;
@@ -335,13 +333,13 @@ header{
 	font-weight: 300;
 	line-height: 24px;
 }
-.wrapper__footer{
+footer{
 	background: url(img/bg_copy.png);
 	background-repeat: no-repeat;
 	background-size: cover;
     height: 200px;
 }
-footer{
+.footer__box{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -370,7 +368,7 @@ footer{
  .container{
  	width: 750px;
  }
-  .wrapper__header{
+ header{
  	height: 800px;
  	background-size: 290%;
  }
@@ -397,12 +395,6 @@ footer{
  .header__title{
  	margin-bottom: 35px; 
  }
- .about__text_w960{
- 	display: none;
- }
- .about__text_w768{
- 	display: inline;
- }
  .blogs__w960{
  	display: none;
  }
@@ -415,7 +407,7 @@ footer{
  	width: 450px;
  	height: 100%;
  }
- .wrapper__header{
+ header{
  	height: 550px;
  	display: flex;
     flex-direction: column;
@@ -570,7 +562,7 @@ footer{
  .news__items{
  	width: 100%;
  }
- footer{
+ .footer__box{
  	flex-direction: column;
  	justify-content: space-evenly;
  }
@@ -587,14 +579,14 @@ footer{
  	width: 300px;
  	height: 100%;
  }
- .wrapper__header{
+ header{
  	height: 480px;
  	flex-direction: column;
     justify-content: space-around;
     display: flex;
     background-size: 430%;
  }
- header{
+ .header__main{
  	padding:0; 
  }
  .header__box{
@@ -700,12 +692,7 @@ footer{
  .wrapper__about{
  	height: 600px;
  }
- .about__text_w960{
- 	display: none;
- }
- .about__text_w320{
- 	display: inline;
- }
+ 
  .about{
  	justify-content: space-evenly;
     flex-direction: column;
@@ -771,7 +758,7 @@ footer{
  .footer__menu{
  	display: none;
  }
- footer{
+ .footer__box{
  	justify-content: center;
  }
 
