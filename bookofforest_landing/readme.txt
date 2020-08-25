@@ -1,4 +1,4 @@
-=== Twenty Twenty ===
+﻿=== Twenty Twenty ===
 Contributors: the WordPress team
 Tested up to: 5.3
 Stable tag: 1.2
@@ -106,3 +106,5 @@ Included as part of the following classes and functions:
 
 Underscores 
 https://underscores.me/, (C) 2012-2019 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+
+Release 2.0
