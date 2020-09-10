@@ -25,15 +25,21 @@ button:focus {
     outline: none;
 }
 header{
-	background-image: url(img/Background_header.png);
+	background: linear-gradient(180deg, #324FC8 0%, #6ECCEB 100%);
+}
+.wrapper__header{
+	background-image: url(img/Content.png);
 	background-repeat: no-repeat;
 	height: 658px;
+    background-position: center;
+    background-size: cover;
 }
 .container{
 	width: 1132px;
 	margin: 0 auto;
+	height: 100%;
 }
-.header__wrapper{
+.header__menu{
 	display: flex;
 	justify-content: space-between;
 	padding-top: 35px;
@@ -46,11 +52,11 @@ header{
 .header__box{
 	width: 65%;
 }
-.header__menu{
+.header__submenu{
 	display: flex;
 	justify-content: space-evenly;
 }
-.header__menu a, .header__login a{
+.header__submenu a, .header__login a{
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: normal;
@@ -58,7 +64,7 @@ header{
 	line-height: 24px;
 	color: #FFFFFF;
 }
-.header__menu a:hover, .header__login a:hover{
+.header__submenu a:hover, .header__login a:hover{
 	font-weight: bold;
 }
 .header__right{
@@ -83,11 +89,11 @@ li.header__main_language:hover > ul, .header__language:hover{
 }
 .header__container{
 	display: flex;
-	height: 351px;
 	margin-top: 100px;
 }
 .header__content{
 	width: 46%;
+	height: 351px;
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -129,12 +135,6 @@ li.header__main_language:hover > ul, .header__language:hover{
     color: #017DE5;
     margin-right: 10px;
 }
-.header__img{
-	position: relative;
-}
-.header__img img{
-	position: absolute;
-}
 .features__container{
 	display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	display: flex;
 	flex-wrap: wrap;
 	height: 400px;
-    align-items: center;
+    padding-top: 50px;
 }
 .features__items{
 	width: 50%;
@@ -297,11 +297,9 @@ li.header__main_language:hover > ul, .header__language:hover{
 	justify-content: space-between;
 }
 .arbitration__invest_item{
-	width: 32%;
+	width: 31.5%;
 	display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 356px;
     height: 382px;
     justify-content: space-between;
     background: #FFFFFF;
@@ -310,10 +308,6 @@ li.header__main_language:hover > ul, .header__language:hover{
 	box-shadow: 0px 12px 20px rgba(163, 172, 191, 0.2), 0px 2px 4px rgba(163, 172, 191, 0.1);
 	border-radius: 3px;
 }
-.arbitration__invest_text{
-	display: flex;
-    flex-direction: column;
-}
 .arbitration__invest_title{
 	font-family: Raleway;
 	font-style: normal;
@@ -321,7 +315,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	font-size: 18px;
 	line-height: 24px;
 	color: #017DE5;
-	width: 300px;
+	margin-left: 24px;
 }
 .arbitration__invest_text{
 	font-family: Raleway;
@@ -330,7 +324,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	font-size: 15px;
 	line-height: 24px;
 	color: #69758C;
-	width: 300px;
+    margin-left: 24px;
 }
 .arbitration__invest_link{
 	height: 54px;
@@ -342,7 +336,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24px;
+    margin: 0px 0px 24px 25px;
 }
 .arbitration__invest_link a{
 	font-family: Raleway;
@@ -533,7 +527,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	margin-bottom: 24px;
 	margin-left: 24px; 
 }
-.news__button span{
+.news__button a{
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: bold;
@@ -555,7 +549,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	height: 93px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .sub-footer__title{
 	font-family: Roboto;
@@ -575,6 +569,7 @@ li.header__main_language:hover > ul, .header__language:hover{
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 24px;
+	color: #69758C;
 }
 .sub-footer__addition{
 	display: flex;
@@ -623,14 +618,123 @@ footer{
 	column-count: 2;
 	list-style-type: decimal;
 }
-
 @media screen  
-  and (max-device-width: 1439px)
-  and (min-device-width: 768px){
- .header__menu{
+  and (max-width: 1439px)
+  and (min-width: 768px){
+ .container{
+ 	width: 720px;
+ }
+ .wrapper__header{
+	background-image: url(img/Content_1.png);
+	background-repeat: no-repeat;
+	height: 658px;
+    background-position: center;
+    background-size: cover;
+ }
+ .header__left{
+ 	width: 40%;
+ }
+ .header__right{
+ 	width: 60%;
+ }
+ .header__container{
+ 	margin-top: 330px;
+ }
+ .header__submenu{
  	display: none;
  }
- .header__drop-down{
- 	display: block;
+ .header__content{
+ 	width: 100%;
+ 	text-align: center;
+ 	height: 196px;
+ }
+ .header__title{
+ 	font-size: 32px;
+ }
+ .header__button{
+ 	margin: 0 auto;
+ }
+ .features__title{
+ 	padding-top: 55px;
+ }
+ .features__items_img{
+ 	padding-right: 15px; 
+ }
+ .arbitration__container{
+ 	height: 1200px;
+ }
+ .arbitration__content{
+ 	flex-direction: column-reverse;
+ }
+ .arbitration__text{
+ 	padding-top: 30px; 
+ }
+ .arbitration__img{
+ 	width: 226px;
+ }
+ .arbitration__invest_item{
+ 	height: 342px;
+ }
+ .arbitration__invest_title{
+ 	margin-left: 16px; 
+ }
+ .arbitration__invest_text{
+ 	margin-left: 16px; 
+ }
+ .arbitration__invest_link{
+ 	width: 196px;
+ 	margin-left: 16px; 
+ }
+ .benefits__container{
+ 	height: 750px;
+ }
+ .benefits__content{
+ 	flex-wrap: wrap;
+ }
+ .benefits__item{
+ 	width: 50%;
+ }
+ .statistics__item{
+ 	width: 33%;
+ }
+ .statistics__subtitle{
+ 	font-size: 32px;
+ }
+ .statistics__subtext{
+ 	line-height: 1.5;
+ }
+ .news__item{
+ 	overflow: hidden;
+ 	width: 344px;
+ }
+ .news__text{
+ 	line-height: 2;
+ }
+ .sub-footer__container{
+ 	height: 387px;
+ 	justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+ }
+ .sub-footer__item{
+ 	width: 540px;
+ }
+ .footer__container{
+ 	flex-wrap: wrap;
+ 	padding-top: 20px;
+ }
+ .footer__logo{
+ 	order: 0;
+ 	width: 50%;
+ }
+ .footer__content{
+ 	order: 2;
+ 	width: 100%;
+ }
+ .footer__social-networks{
+ 	order: 1;
+ 	width: 20%;
+    display: flex;
+    justify-content: space-between;
  }
   }

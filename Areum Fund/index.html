@@ -8,56 +8,55 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="header__wrapper">
-				<div class="header__left">
-					<div>
-						<img src="img/logotype.png" alt="logotype">
+		<div class="wrapper__header">
+			<div class="container">
+				<div class="header__menu">
+					<div class="header__left">
+						<div>
+							<img src="img/logotype.png" alt="logotype">
+						</div>
+						<div class="header__box">
+							<ul class="header__submenu">
+								<li><a href="/">Как это работает?</a></li>
+								<li><a href="/">Сообщество</a></li>
+								<li><a href="/">О компании</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="header__box">
-						<ul class="header__menu">
-							<li><a href="/">Как это работает?</a></li>
-							<li><a href="/">Сообщество</a></li>
-							<li><a href="/">О компании</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="header__right">
-					<div class="header__box">
-						<ul class="header__login">
-							<li><a href="/">Вход</a></li>
-							<li><a href="/">Регистрация</a></li>
-							<li class="header__main_language"><a href="/">RU <span>&#8744</span></a>
-								<ul class="header__language">
-									<li><a href="">UA</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="header__social-networks">
-						<a href="/"><img src="img/facebook.png" alt="Facebook"></a>
-						<a href="/"><img src="img/Google.png" alt="Google"></a>
-						<a href="/"><img src="img/Instagram.png" alt="Instagram"></a>
-					</div>
-					<div class="header__drop-down">
-						<img src="img/menu.svg" alt="menu">
-					</div>
-				</div>
-			</div>
-			<div class="header__container">
-				<div class="header__content">
-					<div class="header__title">
-						<span>Начни инвестировать<br>сегодня</span>
-					</div>
-					<div class="header__text">
-						<span>AreumFund  - Текущая доходность - 18% годовых в долларах США. Доходность в долларах и  криптовалюте. Минимальная сумма депозита 25$</span>
-					</div>
-					<div class="header__button">
-						<button><span>Подробнее о платформе Areum Fund </span><img src="img/Shape.png" alt="arrow"></button>
+					<div class="header__right">
+						<div class="header__box">
+							<ul class="header__login">
+								<li><a href="/">Вход</a></li>
+								<li><a href="/">Регистрация</a></li>
+								<li class="header__main_language"><a href="/">RU <span>&#8744</span></a>
+									<ul class="header__language">
+										<li><a href="">UA</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="header__social-networks">
+							<a href="/"><img src="img/facebook.png" alt="Facebook"></a>
+							<a href="/"><img src="img/Google.png" alt="Google"></a>
+							<a href="/"><img src="img/Instagram.png" alt="Instagram"></a>
+						</div>
+						<div class="header__drop-down">
+							<img src="img/menu.svg" alt="menu">
+						</div>
 					</div>
 				</div>
-				<div class="header__img">
-					<img src="img/Bitmap_header.png" alt="Bitmap">
+				<div class="header__container">
+					<div class="header__content">
+						<div class="header__title">
+							<span>Начни инвестировать сегодня</span>
+						</div>
+						<div class="header__text">
+							<span>AreumFund  - Текущая доходность - 18% годовых в долларах США. Доходность в долларах и  криптовалюте. Минимальная сумма депозита 25$</span>
+						</div>
+						<div class="header__button">
+							<button><span>Подробнее о платформе Areum Fund </span>	<img src="img/Shape.png" alt="arrow"></button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -148,13 +147,13 @@
 				<div class="arbitration__invest">
 					<div class="arbitration__invest_item">
 						<div>
-							<img src="img/img_bg_gr.png" alt="green">
+							<img class="arbitration__img" src="img/img_bg_gr.png" alt="green">
 						</div>
 						<div class="arbitration__invest_title">
 							<span>USD Areum</span>
 						</div>
 						<div class="arbitration__invest_text">
-							<span>Арбитраж с хеджированием депозита и прибыли относительно курса BTC к USD.</span>
+							<span>Арбитраж с хеджированием депозита и прибыли относительно курса BTC.</span>
 						</div>
 						<div class="arbitration__invest_link">
 							<a href="/">Инвестировать в USDA</a>
@@ -162,7 +161,7 @@
 					</div>
 					<div class="arbitration__invest_item">
 						<div>
-							<img src="img/img_bg_ye.png" alt="yellow">
+							<img class="arbitration__img" src="img/img_bg_ye.png" alt="yellow">
 						</div>
 						<div class="arbitration__invest_title">
 							<span>BTC Areum</span>
@@ -176,7 +175,7 @@
 					</div>
 					<div class="arbitration__invest_item">
 						<div>
-							<img src="img/img_bg_bl.png" alt="blue">
+							<img class="arbitration__img" src="img/img_bg_bl.png" alt="blue">
 						</div>
 						<div class="arbitration__invest_title">
 							<span>ETH Areum</span>
@@ -300,19 +299,19 @@
 						<span>Новости из мира криптовалют и платформы Areum Fund</span>
 					</div>
 					<div class="news__item">
-						<div>
+						<div class="news__img">
 							<img src="img/news_photo.png" alt="news photo">
 						</div>
 						<div class="news__subtitle">
-							<span>Биткоин-биржа Bitfinex могла заключить партнерское
-							соглашение с HSBC</span>
+							<a href="#">Биткоин-биржа Bitfinex могла заключить партнерское
+							соглашение с HSBC</a>
 						</div>
 						<div class="news__subtext">
 							<span>Одна из ведущих криптовалютных бирж Bitfinex могла заключить партнерские отношения с британским банком HSBC.</span>
 						</div>
 						<div>
 							<button class="news__button">
-								<span>Читать подробнее</span>
+								<a href="#">Читать подробнее</a>
 							</button>
 						</div>
 					</div>
@@ -325,18 +324,18 @@
 						<span>Рынок криптовалют ежедневно меняется. Мы следим и оповещаем вас.</span>
 					</div>
 					<div class="news__item">
-						<div>
+						<div class="news__img">
 							<img src="img/news_photo_2.png" alt="news photo">
 						</div>
 						<div class="news__subtitle">
-							<span>Обзор рынка криптовалют от Ареум Фонд за прошедшую неделю</span>
+							<a href="#">Обзор рынка криптовалют от Ареум Фонд за прошедшую неделю</a>
 						</div>
 						<div class="news__subtext">
 							<span>Главные новости за последнюю неделю: Ripple объявила о начале коммерческого использования продукта xRapid.</span>
 						</div>
 						<div>
 							<button class="news__button">
-								<span>Читать подробнее</span>
+								<a href="#">Читать подробнее</a>
 							</button>
 						</div>
 					</div>
@@ -353,7 +352,7 @@
 					</div>
 					<div class="sub-footer__column">
 						<div class="sub-footer__title sub-footer__title_blue">
-							<span>Возможности интеграции</span>
+							<a href="#">Возможности интеграции</a>
 						</div>
 						<div class="sub-footer__text">
 							<span>Узнайте подробнее о возможностях интеграции
